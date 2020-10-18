@@ -98,3 +98,104 @@
 #page-map .map-popup .leaflet-popup-tip-container {
   display: none;
 }
+
+.button-open-modal {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+
+  z-index: 10;
+
+  width: 32px;
+  height: 32px;
+  /* background: #15c3d6; */
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay h1 {
+  color: #8fa7b3;
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+.overlay-div {
+  width: 40%;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.input-block + .input-block {
+  margin-top: 24px;
+}
+
+.input-block label {
+  display: flex;
+  color: #8fa7b3;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+.input-block label span {
+  font-size: 14px;
+  color: #8fa7b3;
+  margin-left: 24px;
+  line-height: 24px;
+}
+
+.input-block input {
+  width: 100%;
+  background: #f5f8fa;
+  border: 1px solid #d3e2e5;
+  border-radius: 20px;
+  outline: none;
+  color: #5c8599;
+}
+
+.input-block input {
+  height: 64px;
+  padding: 0 16px;
+}
+
+button.confirm-button {
+  margin-top: 64px;
+
+  width: 100%;
+  height: 64px;
+  border: 0;
+  cursor: pointer;
+  background: #3cdc8c;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 800;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: background-color 0.2s;
+
+  padding-left: 30px;
+}
+
+button.confirm-button svg {
+  margin-right: 16px;
+}
+
+button.confirm-button:hover {
+  background: #36cf82;
+}

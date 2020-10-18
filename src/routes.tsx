@@ -15,7 +15,6 @@ function Routes() {
         <Route path="/orphanages/create" component={CreateOrphanage} />
         <Route path="/orphanages/:id" component={Orphanage} />
       </Switch>
-      Orphanage
     </BrowserRouter>
   );
 }
