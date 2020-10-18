@@ -25,8 +25,6 @@ function Landing() {
       latitude: location.coords.latitude,
       longitude: location.coords.longitude,
     });
-
-    console.log(coordinates);
   });
 
   useEffect(() => {
@@ -36,7 +34,7 @@ function Landing() {
         setCity(response.data.city);
         setState(response.data.state);
       });
-  }, []);
+  }, [coordinates]);
 
   return (
     <div id="page-landing">

@@ -36,7 +36,6 @@ function OrphanagesMap() {
   // executa uma ação qunado uma das [] mudarem o seu valor.
   useEffect(() => {
     api.get("orphanages").then((response) => {
-      console.log(response.data);
       setOrphanages(response.data);
     });
   }, []);
@@ -46,8 +45,6 @@ function OrphanagesMap() {
       latitude: location.coords.latitude,
       longitude: location.coords.longitude,
     });
-
-    console.log(coordinates);
   });
 
   useEffect(() => {
@@ -57,11 +54,8 @@ function OrphanagesMap() {
         setLocation(response.data);
         setCity(response.data.city);
         setState(response.data.state);
-
-        console.log(city);
-        console.log(state);
       });
-  }, []);
+  }, [coordinates]);
 
   function handleCLickModal(
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
